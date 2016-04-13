@@ -23,8 +23,8 @@ end
 
 boundary = "--61141483716826"
 contenttype = "multipart/form-data; boundary=" .. boundary
-token = "xoxp-19424584162-19418489300-26787938816-29eec0abaa"
-channels = "C0KCHFL5N"
+token = ""
+channels = ""
 mes = "--" ..  boundary .. "\r\n"
   .."Content-Disposition: form-data; name=\"file\"; filename=\""..lastFileName.."\"\r\n"
   .."\r\n"

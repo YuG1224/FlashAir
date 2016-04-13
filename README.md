@@ -1,4 +1,4 @@
-# FlashAir-to-Slack
+# FlashAir
 
 - post-image-to-slack.lua
     - LUA_SD_EVENT=/LUA_SCRIPT/post-image-to-slack.lua
