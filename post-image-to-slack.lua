@@ -23,14 +23,17 @@ end
 
 boundary = "--61141483716826"
 contenttype = "multipart/form-data; boundary=" .. boundary
-token = ""
-channels = ""
+token = "xoxp-19424584162-19418489300-26787938816-29eec0abaa"
+channels = "C0KCHFL5N"
 mes = "--" ..  boundary .. "\r\n"
   .."Content-Disposition: form-data; name=\"file\"; filename=\""..lastFileName.."\"\r\n"
   .."\r\n"
   .."<!--WLANSDFILE-->\r\n"
   .."--" .. boundary .. "--\r\n"
 
+print(mes)
+print(lastFileName)
+print(lastFilePath)
 
 blen = lfs.attributes(lastFilePath,"size") + string.len(mes) - 17
 b, c, h = fa.request{
@@ -43,3 +46,7 @@ b, c, h = fa.request{
   file = lastFilePath,
   body = mes
 }
+
+print(b)
+print(c)
+print(h)
